@@ -1,6 +1,4 @@
 const db = require("../models");
-const { Query } = require("mongoose");
-const { response } = require("express");
 const Envs = db.envs;
 exports.add = (req, res) => {
     // Validate request
@@ -49,7 +47,6 @@ exports.update = (req, res) => {
 
 exports.fetch = (req, res) => {
   const id = req.params.id
-  console.log(id)
   Envs.find({ id: id })
     .then(data => {
       res.status(200).send({message: data})

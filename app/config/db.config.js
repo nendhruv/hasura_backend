@@ -1,3 +1,3 @@
 module.exports = {
-    url: "mongodb://localhost:27017/hasura_db"
+    url: "mongodb+srv://dhruv:dhruv@cluster0.1gl6r.mongodb.net/?retryWrites=true&w=majority"
   };
