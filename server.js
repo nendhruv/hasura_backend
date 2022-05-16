@@ -6,7 +6,7 @@ const app = express();
 const db = require("./app/models");
 var corsOptions = {
   // origin: "http://localhost:3000"
-  origin: 'https://peaceful-lowlands-91213.herokuapp.com/'
+  origin: 'https://peaceful-lowlands-91213.herokuapp.com'
 };
 
 app.use(cors(corsOptions));
